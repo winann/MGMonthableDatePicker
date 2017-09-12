@@ -27,13 +27,14 @@ winann
 ## Usage
 
 1. ```import MGMonthableDatePicker```
+
 2. your *viewController* or *view* adopt `MonthOrDayStyleDatePickable`
 3. config sth.(eg: beginDate / endDate / style)
 4. invoke `selectDate(_:)` method
 5. receive `Date` do what you like
 
 ## Screenshot
-
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1fjgyj8egw4g30ad0j2jvy.gif)
 
 ## License
 
