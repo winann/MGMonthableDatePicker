@@ -1,25 +1,120 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MGMonthableDatePicker_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZ7-1P-6aU">
+                                <rect key="frame" x="135" y="70" width="104" height="30"/>
+                                <state key="normal" title="VC Normal"/>
+                                <connections>
+                                    <action selector="normalAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KCh-UA-Hbg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUx-aS-4IM">
+                                <rect key="frame" x="158" y="135" width="58" height="30"/>
+                                <state key="normal" title="VC Daily"/>
+                                <connections>
+                                    <action selector="dailyAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7jt-J8-qDu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XX-e8-xSb">
+                                <rect key="frame" x="130" y="205" width="115" height="30"/>
+                                <state key="normal" title="VC Single Month"/>
+                                <connections>
+                                    <action selector="singleMonthAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GzQ-xj-UUU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZG-kN-ccE">
+                                <rect key="frame" x="135" y="262" width="104" height="30"/>
+                                <state key="normal" title="VC Single Daily"/>
+                                <connections>
+                                    <action selector="singleDailyAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tr0-RP-wab"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jt8-bn-wqX" customClass="DatePickerableView" customModule="MGMonthableDatePicker_Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="292" width="375" height="375"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbJ-hf-4Ch">
+                                        <rect key="frame" x="144" y="30" width="87" height="30"/>
+                                        <state key="normal" title="View Normal"/>
+                                        <connections>
+                                            <action selector="normalAction:" destination="jt8-bn-wqX" eventType="touchUpInside" id="PZs-JD-2dR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpm-Fh-Too">
+                                        <rect key="frame" x="152" y="103" width="71" height="30"/>
+                                        <state key="normal" title="View Daily"/>
+                                        <connections>
+                                            <action selector="dailyAction:" destination="jt8-bn-wqX" eventType="touchUpInside" id="p7d-sR-r1J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfN-b2-xc2">
+                                        <rect key="frame" x="124" y="157" width="128" height="30"/>
+                                        <state key="normal" title="View Single Month"/>
+                                        <connections>
+                                            <action selector="singleMonthAction:" destination="jt8-bn-wqX" eventType="touchUpInside" id="BMr-3X-Hlb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfa-3G-AkX">
+                                        <rect key="frame" x="129" y="216" width="117" height="30"/>
+                                        <state key="normal" title="View Single Daily"/>
+                                        <connections>
+                                            <action selector="singleDailyAction:" destination="jt8-bn-wqX" eventType="touchUpInside" id="mP7-0J-vX1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Bpm-Fh-Too" firstAttribute="top" secondItem="FbJ-hf-4Ch" secondAttribute="bottom" constant="43" id="4Jk-Za-ROs"/>
+                                    <constraint firstItem="Bpm-Fh-Too" firstAttribute="centerX" secondItem="OfN-b2-xc2" secondAttribute="centerX" id="BOj-dI-g5K"/>
+                                    <constraint firstItem="OfN-b2-xc2" firstAttribute="top" secondItem="Bpm-Fh-Too" secondAttribute="bottom" constant="24" id="Og9-JC-aOA"/>
+                                    <constraint firstItem="Zfa-3G-AkX" firstAttribute="top" secondItem="OfN-b2-xc2" secondAttribute="bottom" constant="29" id="Zwr-AS-4i6"/>
+                                    <constraint firstItem="FbJ-hf-4Ch" firstAttribute="centerX" secondItem="jt8-bn-wqX" secondAttribute="centerX" id="hF9-i0-vhe"/>
+                                    <constraint firstItem="FbJ-hf-4Ch" firstAttribute="centerX" secondItem="Bpm-Fh-Too" secondAttribute="centerX" id="iZx-JK-g00"/>
+                                    <constraint firstItem="OfN-b2-xc2" firstAttribute="centerX" secondItem="Zfa-3G-AkX" secondAttribute="centerX" id="vwH-Nc-Eb7"/>
+                                    <constraint firstItem="FbJ-hf-4Ch" firstAttribute="top" secondItem="jt8-bn-wqX" secondAttribute="top" constant="30" id="yOb-d3-IYJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eZG-kN-ccE" firstAttribute="top" secondItem="9XX-e8-xSb" secondAttribute="bottom" constant="27" id="1qx-LB-XwD"/>
+                            <constraint firstItem="BZ7-1P-6aU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="2gs-H6-bFG"/>
+                            <constraint firstItem="BZ7-1P-6aU" firstAttribute="trailing" secondItem="eZG-kN-ccE" secondAttribute="trailing" id="3X7-fU-r6A"/>
+                            <constraint firstItem="BZ7-1P-6aU" firstAttribute="leading" secondItem="eZG-kN-ccE" secondAttribute="leading" id="7G7-Pj-Xfy"/>
+                            <constraint firstItem="aUx-aS-4IM" firstAttribute="top" secondItem="BZ7-1P-6aU" secondAttribute="bottom" constant="35" id="A4x-bw-k9d"/>
+                            <constraint firstAttribute="trailing" secondItem="jt8-bn-wqX" secondAttribute="trailing" id="Mze-8J-5Vn"/>
+                            <constraint firstItem="jt8-bn-wqX" firstAttribute="top" secondItem="eZG-kN-ccE" secondAttribute="bottom" id="YII-Qn-i46"/>
+                            <constraint firstItem="BZ7-1P-6aU" firstAttribute="centerX" secondItem="aUx-aS-4IM" secondAttribute="centerX" id="eZq-Bd-Fgf"/>
+                            <constraint firstItem="9XX-e8-xSb" firstAttribute="centerX" secondItem="eZG-kN-ccE" secondAttribute="centerX" id="lsi-tA-IFY"/>
+                            <constraint firstItem="jt8-bn-wqX" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="oEt-ol-QpL"/>
+                            <constraint firstItem="eZG-kN-ccE" firstAttribute="centerX" secondItem="jt8-bn-wqX" secondAttribute="centerX" id="qCE-qf-DFh"/>
+                            <constraint firstItem="9XX-e8-xSb" firstAttribute="top" secondItem="aUx-aS-4IM" secondAttribute="bottom" constant="40" id="tXG-SB-1nZ"/>
+                            <constraint firstItem="jt8-bn-wqX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="xUd-PZ-C3v"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="84" y="37.331334332833585"/>
         </scene>
     </scenes>
 </document>

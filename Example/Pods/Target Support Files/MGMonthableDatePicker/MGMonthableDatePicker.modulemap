@@ -1,0 +1,6 @@
+framework module MGMonthableDatePicker {
+  umbrella header "MGMonthableDatePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7B5408EBA6A3CBB9501ACB9D /* Pods_MGMonthableDatePicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7DBAC0264182C462D31C22 /* Pods_MGMonthableDatePicker_Example.framework */; };
+		953C14A21F67DD630015578E /* DatePickerableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953C14A11F67DD630015578E /* DatePickerableView.swift */; };
 		FCB0400631CE3AF8F8AAEAA1 /* Pods_MGMonthableDatePicker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FA00BEB3F12FA5EA4D499B /* Pods_MGMonthableDatePicker_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		0B7DBAC0264182C462D31C22 /* Pods_MGMonthableDatePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGMonthableDatePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FA03BDD33FF9E925BEC19BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0FA03BDD33FF9E925BEC19BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		309943BFF291516D3A4C563E /* Pods-MGMonthableDatePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGMonthableDatePicker_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGMonthableDatePicker_Tests/Pods-MGMonthableDatePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		40C86D56FEAC3B6B3B69D61B /* Pods-MGMonthableDatePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGMonthableDatePicker_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGMonthableDatePicker_Example/Pods-MGMonthableDatePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MGMonthableDatePicker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGMonthableDatePicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,8 +43,9 @@
 		607FACE51AFB9204008FA782 /* MGMonthableDatePicker_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGMonthableDatePicker_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7D422377BE8DD825E2E8C6FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C00477C266D40B808BA362C4 /* MGMonthableDatePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MGMonthableDatePicker.podspec; path = ../MGMonthableDatePicker.podspec; sourceTree = "<group>"; };
+		7D422377BE8DD825E2E8C6FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		953C14A11F67DD630015578E /* DatePickerableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerableView.swift; sourceTree = "<group>"; };
+		C00477C266D40B808BA362C4 /* MGMonthableDatePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MGMonthableDatePicker.podspec; path = ../MGMonthableDatePicker.podspec; sourceTree = "<group>"; };
 		D0FA00BEB3F12FA5EA4D499B /* Pods_MGMonthableDatePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGMonthableDatePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D871ED52DD4E8A8844140A48 /* Pods-MGMonthableDatePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGMonthableDatePicker_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGMonthableDatePicker_Tests/Pods-MGMonthableDatePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F3C5D0118363D6B40321C40D /* Pods-MGMonthableDatePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGMonthableDatePicker_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGMonthableDatePicker_Example/Pods-MGMonthableDatePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				953C14A11F67DD630015578E /* DatePickerableView.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -343,10 +346,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MGMonthableDatePicker_Example/Pods-MGMonthableDatePicker_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/MGMonthableDatePicker/MGMonthableDatePicker.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGMonthableDatePicker.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				953C14A21F67DD630015578E /* DatePickerableView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
