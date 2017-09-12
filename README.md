@@ -22,7 +22,18 @@ pod 'MGMonthableDatePicker'
 
 ## Author
 
-winann, sya@mogoroom.com
+winann
+
+## Usage
+
+1. ```import MGMonthableDatePicker```
+2. your *viewController* or *view* adopt `MonthOrDayStyleDatePickable`
+3. config sth.(eg: beginDate / endDate / style)
+4. invoke `selectDate(_:)` method
+5. receive `Date` do what you like
+
+## Screenshot
+
 
 ## License
 
