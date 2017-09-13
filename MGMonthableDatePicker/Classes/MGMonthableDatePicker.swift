@@ -339,6 +339,7 @@ extension MGMonthableDatePicker: UIPickerViewDataSource {
     public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if 0 == component {
             pickerView.reloadComponent(1)
+            pickerView.selectRow(0, inComponent: 1, animated: true)
         }
     }
 }
