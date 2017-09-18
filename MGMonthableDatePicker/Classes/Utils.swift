@@ -9,7 +9,8 @@
 import Foundation
 import ObjectiveC
 private var layerBorderColor = UIColor.gray
-public extension UIView {
+
+extension UIView {
     
     ///----------------------
     /// MARK: viewControllers
@@ -18,7 +19,7 @@ public extension UIView {
     /**
      Returns the UIViewController object that manages the receiver.
      */
-    public func viewController()->UIViewController? {
+    func viewController()->UIViewController? {
         
         var nextResponder: UIResponder? = self
         
