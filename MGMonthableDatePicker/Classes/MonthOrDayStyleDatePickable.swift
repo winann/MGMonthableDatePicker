@@ -20,11 +20,26 @@ extension MonthOrDayStyleDatePickable {
         dateSelectView.show()
     }
     public func addSelectView() {
+        func viewController(_ view: UIView) -> UIViewController? {
+            
+            var nextResponder: UIResponder? = view
+            
+            repeat {
+                nextResponder = nextResponder?.next
+                
+                if let viewController = nextResponder as? UIViewController {
+                    return viewController
+                }
+                
+            } while nextResponder != nil
+            
+            return nil
+        }
         var addedView: UIView? = nil
         if let view = self as? UIView {
             if let _ = dateSelectView.superview {
                 return
-            } else if let vc = view.viewController() {
+            } else if let vc = viewController(view) {
                 addedView = vc.view
             }
         } else if let vc = self as? UIViewController {

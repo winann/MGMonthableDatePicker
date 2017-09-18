@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MGMonthableDatePicker'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'DatePicker can select month or day'
 
 # This description is used to generate tags and improve search results.

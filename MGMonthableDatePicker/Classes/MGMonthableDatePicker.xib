@@ -54,7 +54,7 @@
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                             <real key="value" value="0.5"/>
                                         </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColorWithUIColor">
+                                        <userDefinedRuntimeAttribute type="color" keyPath="xibBorderColorWithUIColor">
                                             <color key="value" red="0.18039215689999999" green="0.54117647059999996" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -81,7 +81,7 @@
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                             <real key="value" value="0.5"/>
                                         </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColorWithUIColor">
+                                        <userDefinedRuntimeAttribute type="color" keyPath="xibBorderColorWithUIColor">
                                             <color key="value" red="0.56470588239999997" green="0.56470588239999997" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">

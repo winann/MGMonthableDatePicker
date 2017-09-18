@@ -268,9 +268,10 @@ public class MGMonthableDatePicker: UIView {
         if isMonthDate {
             if let year = pickerView(monthPicker, titleForRow: monthPicker.selectedRow(inComponent: 0), forComponent: 0),
                 let month = pickerView(monthPicker, titleForRow: monthPicker.selectedRow(inComponent: 1), forComponent: 1){
-                
-                let yearStr = year.substring(to: year.characters.count - 1)
-                let monthStr = month.substring(to: month.characters.count - 1)
+                let yearStr = year.substring(to: year.index(year.startIndex, offsetBy: year.characters.count - 1))
+                let monthStr = month.substring(to: month.index(month.startIndex, offsetBy: month.characters.count - 1))
+//                let yearStr = year.substring(to: year.characters.count - 1)
+//                let monthStr = month.substring(to: month.characters.count - 1)
                 dateFormat = "yyyy-MM"
                 let date = dateFormatter.date(from: "\(yearStr)-\(monthStr)")
                 return date
