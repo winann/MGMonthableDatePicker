@@ -225,6 +225,7 @@ public class MGMonthableDatePicker: UIView {
         layoutIfNeeded()
         self.isHidden = false
         contentViewBottom.constant = 0
+        configCurrentDate()
         UIView.animate(withDuration: 0.3, animations: { [weak self] in
             guard let `self` = self else { return }
             self.layoutIfNeeded()

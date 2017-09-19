@@ -13,15 +13,18 @@ class ViewController: UIViewController {
 
     var dateSelectView: MGMonthableDatePicker = {
         let pickerView = MGMonthableDatePicker()
-        let dateformatter = DateFormatter()
-        dateformatter.dateFormat = "yyyy-MM-dd"
-        pickerView.beginDate = dateformatter.date(from: "2016-5-30")!
-        pickerView.endDate = dateformatter.date(from: "2019-12-31")!
+        pickerView.style = .singleMonthly
         return pickerView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let dateformatter = DateFormatter()
+        dateformatter.dateFormat = "yyyy-M"
+        dateSelectView.beginDate = dateformatter.date(from: "2016-10")!
+        dateSelectView.endDate = dateformatter.date(from: "2017-9")!
+//        dateSelectView.currentDate = dateformatter.date(from: "2016-11")!
         // Do any additional setup after loading the view, typically from a nib.
         
     }
