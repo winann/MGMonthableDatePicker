@@ -327,7 +327,9 @@ extension MGMonthableDatePicker: UIPickerViewDataSource {
         if 0 == component {
             return yearEnd - yearBegin + 1
         } else if 1 == component {
-            if pickerView.selectedRow(inComponent: 0) == 0 {
+            if yearEnd - yearBegin == 0 {
+                return lastYearEndMonth - firstYearBeginMonth + 1
+            } else if pickerView.selectedRow(inComponent: 0) == 0 {
                 if firstYearBeginMonth > 0 {
                     
                     return 12 - firstYearBeginMonth + 1

@@ -22,8 +22,8 @@ class ViewController: UIViewController {
         
         let dateformatter = DateFormatter()
         dateformatter.dateFormat = "yyyy-M"
-        dateSelectView.beginDate = dateformatter.date(from: "2016-10")!
-        dateSelectView.endDate = dateformatter.date(from: "2017-9")!
+        dateSelectView.beginDate = dateformatter.date(from: "2016-11")!
+        dateSelectView.endDate = dateformatter.date(from: "2016-9")!
 //        dateSelectView.currentDate = dateformatter.date(from: "2016-11")!
         // Do any additional setup after loading the view, typically from a nib.
         
