@@ -1,4 +1,5 @@
 use_frameworks!
+inhibit_all_warnings!
 
 target 'MGMonthableDatePicker_Example' do
   pod 'MGMonthableDatePicker', :path => '../'
@@ -6,8 +7,8 @@ target 'MGMonthableDatePicker_Example' do
   target 'MGMonthableDatePicker_Tests' do
     inherit! :search_paths
 
-    pod 'Quick', '~> 1.0.0'
-  pod 'Nimble', '~> 5.1.1'
+    pod 'Quick'
+  pod 'Nimble'
   pod 'FBSnapshotTestCase'
   pod 'Nimble-Snapshots'
   end

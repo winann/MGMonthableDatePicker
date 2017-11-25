@@ -17,7 +17,8 @@ MGMonthableDatePicker is available through [CocoaPods](http://cocoapods.org). To
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'MGMonthableDatePicker'
+pod 'MGMonthableDatePicker', '~> '1.0.0' // Swift 4.0
+pod 'MGMonthableDatePicker', '~> '0.1.6' // less than Swift 3.0
 ```
 
 ## Author

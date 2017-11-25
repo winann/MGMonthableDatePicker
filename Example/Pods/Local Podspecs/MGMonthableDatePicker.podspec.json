@@ -1,8 +1,8 @@
 {
   "name": "MGMonthableDatePicker",
-  "version": "0.1.0",
-  "summary": "A short description of MGMonthableDatePicker.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.0.0",
+  "summary": "DatePicker can select month or day",
+  "description": "This is a datePicker that can select month or day.",
   "homepage": "https://github.com/winann/MGMonthableDatePicker",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/winann/MGMonthableDatePicker.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -21,12 +21,7 @@
   "source_files": "MGMonthableDatePicker/Classes/**/*",
   "resource_bundles": {
     "MGMonthableDatePicker": [
-      "MGMonthableDatePicker/Assets/*.xib"
-    ]
-  },
-  "dependencies": {
-    "AFNetworking": [
-      "~> 2.3"
+      "MGMonthableDatePicker/Classes/*.xib"
     ]
   }
 }
